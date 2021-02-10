@@ -1,5 +1,11 @@
 package com.navadhan;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
+import androidx.databinding.DataBindingUtil;
+import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.GridLayoutManager;
+
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.graphics.Color;
@@ -9,12 +15,6 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
-import androidx.databinding.DataBindingUtil;
-import androidx.lifecycle.ViewModelProviders;
-import androidx.recyclerview.widget.GridLayoutManager;
 
 import com.navadhan.adapter.HeatmapGridAdapter;
 import com.navadhan.common.Constant;
@@ -31,8 +31,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 
-public class GetHeatmapActivity extends AppCompatActivity implements HeatmapGridAdapter.ItemClickListener {
+public class GetHeatmapActivity extends AppCompatActivity implements HeatmapGridAdapter.ItemClickListener{
+
     private ActivityGetHeatmapBinding binding;
     private GetHeatmapViewModel getHeatmapViewModel;
     private String household_no;
@@ -144,8 +146,8 @@ public class GetHeatmapActivity extends AppCompatActivity implements HeatmapGrid
                     if (responseModel.getJsonObject().getString("status").equals("1")) {
                         jsonObject = responseModel.getJsonObject();
                         JSONArray arr = jsonObject.getJSONArray("heatmap");
-                        LinkedHashSet<Integer> rowHashSet = new LinkedHashSet<Integer>();
-                        LinkedHashSet<Integer> columnHashSet = new LinkedHashSet<Integer>();
+                        Set<Integer> rowHashSet = new LinkedHashSet<>();
+                        Set<Integer> columnHashSet = new LinkedHashSet<>();
                         for(int i=0;i<arr.length();i++){
                             JSONObject jsonObject1 = arr.getJSONObject(i);
                             int row = Integer.parseInt(jsonObject1.getString("row"));
