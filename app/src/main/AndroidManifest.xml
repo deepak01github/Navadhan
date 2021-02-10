@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.navadhan">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.AppCompat.Light">
+        <activity android:name="com.navadhan.ListFamilyMemberActivity"></activity>
+        <activity android:name="com.navadhan.AaddharKycActivity" />
+        <activity android:name="com.navadhan.CameraOCRActivity" />
+        <activity android:name="com.navadhan.ImageToTextActivity" />
+        <activity android:name="com.navadhan.DocumentOCR" />
+        <activity android:name="com.navadhan.SplashActivity" />
+        <activity android:name="com.navadhan.GetSummaryActivity" />
+        <activity android:name="com.navadhan.GetObligationActivity" />
+        <activity android:name="com.navadhan.GetHeatmapActivity" />
+        <activity android:name="com.navadhan.SelectOptionsActivity" />
+        <activity android:name="com.navadhan.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

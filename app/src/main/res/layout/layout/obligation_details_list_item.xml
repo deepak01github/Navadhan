@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TableLayout
+        android:id="@+id/tableObligationDetailsData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_card"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp">
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/total_disbursed"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:textSize="@dimen/text_size"/>
+            <TextView
+                android:id="@+id/total_disbursed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size"/>
+        </TableRow>
+        <TableRow
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_margin="5dp"
+                android:text="@string/total_current_balance"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size"/>
+            <TextView
+                android:id="@+id/total_current_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_margin="5dp"
+                android:text="@string/total_instalment"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size"/>
+            <TextView
+                android:id="@+id/total_instalment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size"/>
+        </TableRow>
+    </TableLayout>
+    <ImageView
+        android:id="@+id/image_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tableObligationDetailsData"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/left_arrow"
+        />
+    <ImageView
+        android:id="@+id/image_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/right_arrow"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@id/tableObligationDetailsData"
+        android:layout_marginRight="10dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

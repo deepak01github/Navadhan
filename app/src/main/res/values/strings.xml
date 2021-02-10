@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Navadhan</string>
+    <string name="search_name">Search</string>
+    <string name="response">Response</string>
+    <string name="ok">Ok</string>
+    <string name="heatmap">Heatmap</string>
+    <string name="summary">Summary</string>
+    <string name="obligation">Obligation</string>
+    <string name="pull_date">Pull Date</string>
+    <string name="name">Name</string>
+    <string name="ntc">NTC</string>
+    <string name="score">Score</string>
+    <string name="number_of_account">a/c Total</string>
+    <string name="number_of_account_overdue">a/c Total Ovd</string>
+    <string name="number_of_account_active">a/c Active</string>
+    <string name="number_of_account_active_overdue">a/c Active Ovd</string>
+    <string name="number_of_account_with_alert">Alerts a/c</string>
+    <string name="number_of_total_alert">Alerts</string>
+    <string name="inquiries_24_months">Inquiries 24 Months</string>
+    <string name="inquiries_3_months">Inquiries 3 Months</string>
+    <string name="new_account_24_months">New a/c 24 Months</string>
+    <string name="new_account_3_months">New a/c 24 Months</string>
+    <string name="new_account_amount_3_months">New a/c Vol 3 Months</string>
+    <string name="total_disbursed">Total Disbursed</string>
+    <string name="total_current_balance">Total Current Balance</string>
+    <string name="total_instalment">Total Instalment</string>
+    <string name="credit_guarantor">Lender Name</string>
+    <string name="ownership">Ownership</string>
+    <string name="applicant_name">Borrower Name</string>
+    <string name="account_type">Loan Type</string>
+    <string name="disbursed_amount">Disbursed</string>
+    <string name="current_balance">O/S</string>
+    <string name="monthly_instalment">EMI</string>
+    <string name="in_cb_report">In CB</string>
+    <string name="is_dpd">DPD</string>
+    <string name="days">Days</string>
+    <string name="start_month">Strt Mnth</string>
+    <string name="end_month">End Mnth</string>
+    <string name="search_details">Search Household</string>
+    <string name="list_family_member">List of family members</string>
+    <string name="select_options">Select Options</string>
+    <string name="heatmap_details">Heatmap</string>
+    <string name="obligation_details">Obligation</string>
+    <string name="summary_details">Summary</string>
+    <string name="list_pattern_text">Lead Name - Family Member Name - Contact - Household Id</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="ocr_documentation">OCR Documentation</string>
+    <string name="ocr_by_image">OCR By Image</string>
+    <string name="aaddhar_kyc">Aaddhar KYC</string>
+
+
+</resources>
